@@ -23,7 +23,7 @@
 <div id="results" class="p-5 bg-primary text-white text-center"></div>
 <script>
   async function loaded(reader) {
-    const response = await fetch('https://hf.space/embed/krushna/space1/+/api/predict', {
+    const response = await fetch('https://krushna-space1.hf.space/api/predict', {
       method: "POST", body: JSON.stringify({ "data": [reader.result] }),
       headers: { "Content-Type": "application/json" }
     });
